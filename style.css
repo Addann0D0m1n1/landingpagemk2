@@ -35,9 +35,11 @@ body {
     width: 75px;
     height: 75px;
     object-fit: cover;
-    padding: 16px;
+    padding: 8px 16px;
 }
-
+.header .whoshouse {
+    color: whitesmoke;
+}
 .header,
 .footer,
 .container-1 {
@@ -88,16 +90,18 @@ body {
 
 .card-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 16px;
     flex-wrap: wrap;
+    padding: 16px;
 
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
+    gap: 8px; 
 }
 
 .card-image {
@@ -116,12 +120,14 @@ img {
     max-width: 600px;
     max-height: fit-content;
     flex-shrink: 1;
+    border-radius: 10px;
 }
 
 .container-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 48px;
     background-color: #e5e7eb;
     padding: 48px;
@@ -147,6 +153,7 @@ img {
     border-radius: 10px;
     padding: 16px;
     color: rgb(216, 219, 180);
+    max-height: 300px;
 }
 
 .container-4 button {
@@ -162,4 +169,25 @@ img {
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.secret-elmo {
+    text-align: center;
+}
+.secret-elmo img{
+    margin: 48px;
+    filter: invert(1);
+}
+
+.secret-elmo a {
+    filter: invert(1);
+    
+}
+
+.secret-elmo p:hover {
+    transform: scale(12);
+}
+
+.card.special:hover {
+    transform: scale(.85);
 }
