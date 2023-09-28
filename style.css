@@ -39,6 +39,7 @@ body {
 }
 .header .whoshouse {
     color: whitesmoke;
+    font-weight: 700;
 }
 .header,
 .footer,
@@ -57,8 +58,15 @@ body {
     justify-content: center;
     padding: 96px;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
+.content-image img{
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+    min-width: 100%;
+}
 .content-text,
 .content-image {
     flex: 1;
@@ -189,5 +197,6 @@ img {
 }
 
 .card.special:hover {
-    transform: scale(.85);
+    transform: scale(13);
+    filter: invert(1);
 }
